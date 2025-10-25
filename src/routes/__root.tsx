@@ -17,7 +17,7 @@ const RootLayout = () => {
           Cerrar Sesión
         </Link>
       </div>
-      <hr />
+
       <Outlet />
       <TanStackRouterDevtools />
     </>
