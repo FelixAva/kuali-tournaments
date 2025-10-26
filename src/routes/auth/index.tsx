@@ -1,15 +1,16 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/auth/signup')({
+export const Route = createFileRoute('/auth/')({
   component: RouteComponent,
 })
 
 function RouteComponent() {
   return (
     <div>
-      <h1>Hello "SignUp"!</h1>
-
-      <Link to="/auth">Sign In</Link>
+      <h1>Hello "SignIn"!</h1>
+      <Link to="/auth/signup">
+        Sign Up
+      </Link>
     </div>
   );
 }
