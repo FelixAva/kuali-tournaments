@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
+import { Button } from '../components';
 
 export const Route = createFileRoute('/')({
   component: Index
@@ -6,10 +7,15 @@ export const Route = createFileRoute('/')({
 
 function Index() {
   return (
-    <div className="p-2">
+    <div className="w-full p-2">
       <h2>Torneos</h2>
 
-      
+      <Button
+        title='Crear'
+        action={() => console.log('Creado')}
+        variant='default'
+        type='button'
+      />
     </div>
   );
 };
