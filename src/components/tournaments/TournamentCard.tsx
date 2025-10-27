@@ -2,33 +2,36 @@ import Button from "../ui/Button";
 
 const TournamentCard = () => {
   return (
-    <div className="w-full h-auto">
+    <div className="w-[300px] h-auto rounded-xl overflow-hidden">
       {/* Image container */}
-      <div>
+      <div
+        className="w-auto h-[130px] bg-gradient-to-b from-zinc-400 to-white"
+      >
         {/* Gradient color */}
       </div>
 
-      <div>
-        <div>
+      <div className="px-2.5 py-2">
+        <div className="flex flex-col gap-1.5">
           {/* Badge component */}
-          <h4>Tournament</h4>
+
+          <h4 className="text-xl font-">Tournament</h4>
 
           <div>
             {/* Icon component */}
-            Players { /* Players, get from the backend */}
+            <p className="text-lg font-extralight">Players</p> { /* Players, get from the backend */}
           </div>
-        </div>
 
-        <div>
-          <Button
-            title="Ver detalles"
-            action={() => console.log('Detalles')}
-          />
-          <Button
-            title="Ver detalles"
-            action={() => console.log('Detalles')}
-            variant="ghost"
-          />
+          <div className="flex justify-between">
+            <Button
+              title="Ver detalles"
+              action={() => console.log('Detalles')}
+            />
+            <Button
+              title="Editar"
+              action={() => console.log('Detalles')}
+              variant="ghost"
+            />
+          </div>
         </div>
       </div>
     </div>
