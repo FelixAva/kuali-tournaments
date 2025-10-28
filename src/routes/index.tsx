@@ -12,7 +12,6 @@ function Index() {
 
       <Input
         label='Email'
-        placeholder='tuemail@gmail.com'
         type='email'
       />
     </div>
