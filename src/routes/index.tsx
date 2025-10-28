@@ -10,7 +10,11 @@ function Index() {
     <div className="w-full p-2">
       <h2>Torneos</h2>
 
-      <Input label='Email' placeholder='A' />
+      <Input
+        label='Email'
+        placeholder='tuemail@gmail.com'
+        type='email'
+      />
     </div>
   );
 };

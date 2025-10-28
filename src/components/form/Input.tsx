@@ -1,29 +1,36 @@
-import { FloatingLabel, HelperText } from 'flowbite-react';
-
-interface Props {
-  label: string;
+type InputProps = {
   placeholder: string;
+  type: "email" | "text" | "number" | "password";
+}
+
+interface Props extends InputProps {
+  label: string;
   error?: string;
 }
 
 const Input = ({
   label,
-  placeholder,
-  error
-}: Props) => {
+  error,
+  type,
+  placeholder
+}: Props ) => {
   return (
     <div>
-      <FloatingLabel
-        label={label}
-        variant='outlined'
+      <label
+        htmlFor={label.toLowerCase()}
+      >
+        { label }
+      </label>
+
+      <input
+        id={label.toLowerCase()}
+        type={type}
         placeholder={placeholder}
-        color={error ? "error" : "default"}
       />
+
       {
         error && (
-          <HelperText>
-            {error}
-          </HelperText>
+          <p>{ error }</p>
         )
       }
     </div>
