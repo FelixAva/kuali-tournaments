@@ -13,8 +13,8 @@ const Input = ({
   type,
 }: Props ) => {
   return (
-    <>
-      <div className="relative mb-0.5">
+    <div>
+      <div className="relative">
         <input
           type={type}
           id={label.toLowerCase()}
@@ -31,10 +31,10 @@ const Input = ({
 
       {
         error && (
-          <p className="mx-2.5 text-sm text-red-600">{ error }</p>
+          <p className="mt-1 mx-1.5 text-left text-sm text-red-600">{ error }</p>
         )
       }
-    </>
+    </div>
   );
 };
 
