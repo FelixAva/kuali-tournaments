@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router';
+import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { Input, Button } from '../../components';
 
 export const Route = createFileRoute('/auth/')({
@@ -6,6 +6,17 @@ export const Route = createFileRoute('/auth/')({
 });
 
 function RouteComponent() {
+  const navigate = useNavigate({from: '/auth/'});
+
+  const onSignIn = () => {
+    // ! Integrate real signIn; useSession, API, form validation, etc.
+    alert('Your Logged now. Redirecting...');
+
+    navigate({
+      to: '/'
+    })
+  }
+
   return (
     <>
       <h2
@@ -34,7 +45,7 @@ function RouteComponent() {
 
         <Button
           title='Iniciar Sesión'
-          action={() => console.log('SignIn')}
+          action={onSignIn}
         />
       </form>
     </>
