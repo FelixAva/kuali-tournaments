@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
+import { Bracket } from '../components';
 
 export const Route = createFileRoute('/')({
   component: Index
@@ -6,8 +7,10 @@ export const Route = createFileRoute('/')({
 
 function Index() {
   return (
-    <div className="p-2">
-      <h3>Welcome Home</h3>
+    <div className="w-full p-2">
+      <h2>Torneos</h2>
+
+      <Bracket />
     </div>
   );
 };
