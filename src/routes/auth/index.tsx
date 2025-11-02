@@ -7,12 +7,21 @@ export const Route = createFileRoute('/auth/')({
 
 function RouteComponent() {
   return (
-    <div>
-      <h2>Gestiona tus torneos</h2>
-      <h3>Inicia sesión para acceder a tus torneos</h3>
+    <>
+      <h2
+        className="mb-1.5 text-xl text-[#843CFF]"
+      >
+        Gestiona tus torneos
+      </h2>
+      <h3
+        className="mb-5 text-lg text-gray-600"
+      >
+        Inicia sesión para acceder a tus torneos
+      </h3>
 
       <form
         action=""
+        className="w-[280px] flex flex-col gap-4"
       >
         <Input
           label='Correo'
@@ -28,6 +37,6 @@ function RouteComponent() {
           action={() => console.log('SignIn')}
         />
       </form>
-    </div>
+    </>
   );
 };
