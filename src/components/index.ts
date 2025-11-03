@@ -5,6 +5,7 @@ import Button from './ui/Button';
 import TournamentCard from './tournaments/TournamentCard';
 import Bracket from './tournaments/Bracket';
 
+// * Form components imports
 import Input from './form/Input';
 
 export {
@@ -15,5 +16,6 @@ export {
   TournamentCard,
   Bracket,
 
+  // * Form components exports
   Input,
 }

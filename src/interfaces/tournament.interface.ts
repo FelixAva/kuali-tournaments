@@ -24,4 +24,10 @@ interface TournamentSettings {
   }
   modality: 'single' | 'team';
   sistemMode: 'single' | 'double' | 'roundRobin';
+  prices: Price[];
+}
+
+interface Price {
+  place: number;
+  price: number;
 }
