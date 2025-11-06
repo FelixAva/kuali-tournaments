@@ -3,7 +3,7 @@ import Badge from '../ui/Badge';
 
 const TournamentCard = () => {
   return (
-    <div className="w-[300px] h-auto rounded-xl overflow-hidden">
+    <div className="w-[300px] h-auto rounded-xl overflow-hidden shadow-md">
       {/* Image container */}
       <div
         className="w-auto h-[130px] bg-gradient-to-b from-zinc-400 to-white"
@@ -11,7 +11,7 @@ const TournamentCard = () => {
         {/* Gradient color */}
       </div>
 
-      <div className="px-2.5 py-2">
+      <div className="px-3 py-3">
         <div className="flex flex-col gap-1.5">
           <Badge title="En curso" />
 
