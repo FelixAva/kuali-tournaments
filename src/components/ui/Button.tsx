@@ -18,7 +18,7 @@ const Button = ({
       onClick={action}
       type={type}
       className={clsx(
-        "w-auto h-min px-5 py-2  rounded-md md:text-xl transition-colors duration-200 border hover:cursor-pointer",
+        "w-auto h-min px-5 py-2 rounded-md md:text-lg transition-colors duration-200 border hover:cursor-pointer",
         variant === "default"
         ? "bg-[#843CFF] text-white border-transparent hover:bg-transparent hover:text-[#843CFF] hover:border-[#843CFF]"
         : "bg-transparent text-[#843CFF] border-[#843CFF] hover:bg-[#843CFF] hover:text-white"

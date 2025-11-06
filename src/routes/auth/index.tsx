@@ -20,7 +20,7 @@ function RouteComponent() {
   return (
     <>
       <h2
-        className="mb-1.5 text-xl text-[#843CFF] md:mb-2 md:text-2xl"
+        className="mb-1.5 text-xl text-[#843CFF] font-semibold md:mb-2 md:text-2xl"
       >
         Gestiona tus torneos
       </h2>
